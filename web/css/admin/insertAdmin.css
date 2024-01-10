@@ -1,0 +1,84 @@
+.insert-book{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.insert-book label{
+    font-weight: bold;
+    color: #333;
+}
+.insert-book .insert-book-item{
+    flex-basis: calc(50% - 12px);
+}
+.insert-book-item-descrip{
+    flex-basis: 100%;
+}
+.insert-book-submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+label.error{
+   color : red !important;
+   font-size: 14px;
+   font-weight: 500;
+}
+.preview-image img{
+    box-shadow: -10px -10px 5px #888;
+    border: 1px solid black;
+    width: 300px;
+    height: 430px;
+    margin-top: 10px;
+}
+.insert-book-other{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 190px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.insert-book-other label{
+    font-weight: bold;
+    color: #333;
+}
+.insert-book-other-item{
+    flex-basis: 50%;
+    margin-right: 10px;
+}
+.insert-book-other-button{
+    flex-basis:30%;
+    margin-top: 30px;
+}
+.message-error-book{
+    color : red;
+}
+.info-account{
+    flex-basis: 50%;
+    margin-top: 50px;
+}
+.teacher-save{
+    display: flex; 
+    justify-content: center;
+}
+@media (max-width: 900px){
+    .insert-book{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .insert-book-other{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 600px){
+    .insert-book .insert-book-item{
+        flex-basis: 100%;
+    }
+    .info-account{
+    flex-basis: 100%;
+    margin-top: 50px;}
+}
